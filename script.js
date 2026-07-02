@@ -3,7 +3,7 @@ const input = document.querySelector("#sidebar-search");
 const streamFrame = document.querySelector("#stream-frame");
 
 function generateSource(streamer) {
-    return `https://player.twitch.tv/?channel=${streamer}&parent=127.0.0.1`;
+    return `https://player.twitch.tv/?channel=${streamer}&parent=kyuugg.github.io`;
 }
 
 input.addEventListener("keydown", (event) => {
