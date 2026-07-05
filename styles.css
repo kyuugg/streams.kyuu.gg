@@ -1,111 +1,142 @@
 body {
     background-color: black;
     color: white;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    font-family: "Electrolize";
 }
 
-input {
-    padding: 0;
+h1,
+input,
+button,
+p {
     margin: 0;
-    box-sizing: border-box;
-    font-family: "Electrolize";
 }
 
-#layout {
+a {
+    color: white;
+}
+
+#top-container {
     display: flex;
-    justify-content: left;
+    width: 100vw;
 }
 
 #sidebar {
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-right: 20px;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 20px;
-    border-color: rgb(30, 30, 30);
-    width: 300px;
-    height: 804px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12vw;
+    border: 2px solid rgb(30, 30, 30);
+    margin: 16px;
+    margin-right: 8px;
+    margin-bottom: 0;
+    border-radius: 8px;
+    background-color: black;
+}
+
+#sidebar-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    height: 32px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid rgb(30, 30, 30);
+    background-color: black;
+    color: white;
+}
+
+.sidebar-button-container {
+    display: flex;
+    width: 9vw;
+    height: 32px;
+    border: 2px solid none;
+    border-radius: 8px;
+    margin-bottom: 4px;
+}
+
+.sidebar-streamer-button {
+    border: none;
+    text-align: start;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-sizing: border-box;
+    padding-right: 4vw;
+    color: white;
+    background-color: #9146ff;
+}
+
+.sidebar-streamer-button:hover {
+    cursor: pointer;
+    background-color: #6441a5;
+}
+
+.sidebar-delete-button {
+    border: none;
+    box-sizing: content-box;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 2vw;
+    background-color: #9146ff;
+    color: white;
+}
+
+.sidebar-delete-button:hover {
+    cursor: pointer;
+    background-color: #ae3636;
 }
 
 #stream {
-    margin-top: 20px;
-    margin-right: 20px;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 20px;
-    border-color: rgb(30, 30, 30);
-    width: 1550px;
-    height: 804px;
+    width: 88vw;
+    height: 90vh;
+    border-radius: 8px;
+    margin: 16px;
+    margin-left: 0;
+    margin-bottom: 0;
 }
 
-#footer {
-    margin-left: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 20px;
-    border-color: rgb(30, 30, 30);
-    width: auto;
-    height: 49px;
+#stream-header {
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    background-color: black;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border: 2px solid rgb(30, 30, 30);
 }
 
-.sidebar-item {
-    border-width: 2px;
-    border-color: rgb(55, 0, 66);
-    border-style: solid;
-    border-radius: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 280px;
-    height: 50px;
-    margin-top: 5px;
-    background-color: rgb(28, 0, 34);
-    color: white;
-    font-family: "Electrolize";
-}
-
-.sidebar-item:hover {
-    background-color: rgb(38, 0, 46);
-    cursor: pointer;
-}
-
-#sidebar-search {
-    border-width: 2px;
-    border-color: rgb(40, 40, 40);
-    border-style: solid;
-    border-radius: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 280px;
-    height: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: rgb(0, 0, 0);
-    text-align: center;
-    color: white;
+#stream-name {
+    margin-left: 16px;
+    font-size: x-large;
 }
 
 #stream-frame {
-    border-radius: 20px;
-    border-style: hidden;
-    width: 100%;
-    height: 100%;
+    width: calc(88vw - 2px);
+    height: calc(85vh - 8px - 4px - 2px);
+    border: 1px solid rgb(30, 30, 30);
+    border-radius: 8px;
 }
 
-#footer-text {
-    size: 100px;
-    color: rgb(150, 150, 150);
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: calc(100vw - 32px - 4px);
+    height: 5vh;
+    margin: 16px;
+    margin-top: 8px;
+    border: 2px solid rgb(30, 30, 30);
+    border-radius: 8px;
+    background-color: black;
 }
 
 #footer-logo {
-    padding: 0px;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-right: 10px;
-    float: left;
+    width: 32px;
+    margin-left: 8px;
+}
+
+#footer-paragraph {
+    margin-left: 4px;
 }

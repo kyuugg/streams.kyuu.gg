@@ -14,12 +14,52 @@
     </head>
     <body>
         <div id="top-container">
-            <div id="sidebar"></div>
+            <div id="sidebar">
+                <input
+                    id="sidebar-input"
+                    type="text"
+                    placeholder="Streamer (e.g. ayukyuu)"
+                />
+                <div class="sidebar-button-container">
+                    <button class="sidebar-streamer-button">streamer</button>
+                    <button class="sidebar-delete-button">🗑️</button>
+                </div>
+                <div class="sidebar-button-container">
+                    <button class="sidebar-streamer-button">streamer</button>
+                    <button class="sidebar-delete-button">🗑️</button>
+                </div>
+                <div class="sidebar-button-container">
+                    <button class="sidebar-streamer-button">streamer</button>
+                    <button class="sidebar-delete-button">🗑️</button>
+                </div>
+                <div class="sidebar-button-container">
+                    <button class="sidebar-streamer-button">streamer</button>
+                    <button class="sidebar-delete-button">🗑️</button>
+                </div>
+            </div>
             <div id="stream">
-                <div id="stream-header"></div>
-                <div id="stream-frame"></div>
+                <div id="stream-header">
+                    <h1 id="stream-name">streamer name</h1>
+                </div>
+                <div id="stream-frame">
+                    <iframe
+                        src="https://player.twitch.tv/?channel=vadeal&parent=127.0.0.1"
+                        frameborder="0"
+                        id="stream-frame"
+                    ></iframe>
+                </div>
             </div>
         </div>
-        <div id="footer"></div>
+        <div id="footer">
+            <img
+                id="footer-logo"
+                src="./assets/logo.png"
+                alt="The KyuuGG logo"
+            />
+            <p id="footer-paragraph">
+                &copy; KyuuGG, Licensed under the MIT license.
+                <a href="https://www.github.com/kyuugg">GitHub</a>
+            </p>
+        </div>
     </body>
 </html>
