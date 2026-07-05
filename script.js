@@ -4,7 +4,7 @@ const streamFrame = document.querySelector("#stream-frame");
 const heading = document.querySelector("#stream-name");
 
 function generateSource(streamer) {
-    return `https://player.twitch.tv/?channel=${streamer}&parent=127.0.0.1`;
+    return `https://player.twitch.tv/?channel=${streamer}&parent=streams.kyuu.gg`;
 }
 
 input.addEventListener("keydown", (event) => {
