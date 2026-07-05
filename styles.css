@@ -65,6 +65,7 @@ a {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     box-sizing: border-box;
+    width: 9vw;
     padding-right: 4vw;
     color: white;
     background-color: #9146ff;
@@ -116,6 +117,7 @@ a {
     font-size: x-large;
 }
 
+#stream-frame-container,
 #stream-frame {
     width: calc(88vw - 2px);
     height: calc(85vh - 8px - 4px - 2px);

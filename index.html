@@ -20,19 +20,22 @@
                     id="sidebar-input"
                     type="text"
                     placeholder="Streamer (e.g. ayukyuu)"
+                    maxlength="25"
                 />
                 <nav id="buttons-nav">
                     <!-- <div class="sidebar-button-container">
-                    <button class="sidebar-streamer-button">streamer</button>
-                    <button class="sidebar-delete-button">🗑️</button>
-                </div> -->
+                        <button class="sidebar-streamer-button">streamer</button>
+                        <button class="sidebar-delete-button">🗑️</button>
+                    </div> -->
                 </nav>
             </div>
             <div id="stream">
                 <div id="stream-header">
                     <h1 id="stream-name"></h1>
                 </div>
-                <div id="stream-frame"></div>
+                <div id="stream-frame-container">
+                    <iframe src="" id="stream-frame" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
         <div id="footer">
@@ -46,5 +49,6 @@
                 <a href="https://www.github.com/kyuugg">GitHub</a>
             </p>
         </div>
+        <script type="module" src="script.js"></script>
     </body>
 </html>
