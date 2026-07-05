@@ -13,42 +13,13 @@
         <title>Twitch Multistream Viewer - streams.kyuu.gg</title>
     </head>
     <body>
-        <div id="layout">
-            <aside id="sidebar">
-                <div id="sidebar-content">
-                    <input
-                        id="sidebar-search"
-                        type="text"
-                        placeholder="streamername: e.g. ayukyuu"
-                        maxlength="25"
-                    />
-                    <nav id="buttons-nav"></nav>
-                </div>
-            </aside>
-            <main id="stream">
-                <iframe
-                    src=""
-                    width="1"
-                    height="1"
-                    allowfullscreen
-                    id="stream-frame"
-                >
-                </iframe>
-            </main>
+        <div id="top-container">
+            <div id="sidebar"></div>
+            <div id="stream">
+                <div id="stream-header"></div>
+                <div id="stream-frame"></div>
+            </div>
         </div>
-        <footer id="footer">
-            <img
-                id="footer-logo"
-                src="images/kyuugglogo.png"
-                alt=""
-                width="24px"
-                height="28px"
-            />
-            <p id="footer-text">
-                &copy; 2026 KyuuGG (ayukyuu). All rights reserved. Not
-                affiliated with Twitch.
-            </p>
-        </footer>
-        <script src="script.js" type="module"></script>
+        <div id="footer"></div>
     </body>
 </html>
